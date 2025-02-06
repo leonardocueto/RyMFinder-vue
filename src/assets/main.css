@@ -1,1 +1,11 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-custom-soft-purple: #fee7fa;
+  --color-custom-turquoise: #2debd5;
+  --color-custom-turquoise-black: #003434;
+  --color-custom-lime: #dff1d9;
+  --color-custom-purple: #6646b3;
+  --color-custom-brown: #9b673a;
+  --color-custom-soft-yellow: #f4fec5;
+}
