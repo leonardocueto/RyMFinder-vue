@@ -1,7 +1,8 @@
-import { axios } from '@/utils/axios'
-import { characterStore } from '@/store/characterStore'
-
 import { computed, ref } from 'vue'
+
+import { axios } from '@/utils/axios'
+
+import { characterStore } from '@/store/characterStore'
 
 export default function () {
   const nextPage = ref<string | null>('/character')
