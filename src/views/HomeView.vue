@@ -15,12 +15,22 @@
     <list-cards-component>
       <card-component
         v-for="character of characters"
-        :key="character.title"
+        :key="character.id"
         :title="character.name"
         :status="character.status"
         :gender="character.gender"
         :image="character.image"
+        :id="character.id"
         :loading="loading"
+        type="character"
+      />
+      <card-component
+        v-for="location of locations"
+        :key="location.id"
+        :id="location.id"
+        :title="location.name"
+        :loading="loading"
+        type="location"
       />
     </list-cards-component>
   </div>
@@ -36,26 +46,34 @@ import CardComponent from '@/components/CardComponent.vue'
 import CategoryOptionComponent from '@/components/CategoryOptionComponent.vue'
 
 import useCharacters from '@/composables/useCharacter'
+import useLocation from '@/composables/useLocation'
+import type { ICharacter } from '@/interface/character.interface'
+import type { ILocation } from '@/interface/location.interface'
+
+const { filterCharacter } = useCharacters()
+const { filterLocation } = useLocation()
 
 const title = "What Rick and Morty character's are you looking for?"
 const categories = [
-  {
-    text: 'Characters',
-    link: 'character',
-  },
+  { text: 'Characters', link: 'character' },
   { text: 'Locations', link: 'location' },
   { text: 'Episodes', link: 'episode' },
 ]
 
-const { filterCharacter } = useCharacters()
-
-const characters = ref([])
+const characters = ref<ICharacter[]>([])
+const locations = ref<ILocation[]>([])
 const loading = ref(true)
 
 onMounted(async () => {
   try {
     loading.value = true
-    characters.value = await filterCharacter([1, 2, 3, 4, 5, 6])
+
+    const [characterResponse, locationResponse] = await Promise.all([
+      filterCharacter([1, 2, 3, 4, 5, 6]),
+      filterLocation([1, 2, 3]),
+    ])
+    characters.value = characterResponse
+    locations.value = locationResponse
   } catch (error) {
     throw new Error((error as Error).message || 'Error to get characters home')
   } finally {
