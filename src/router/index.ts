@@ -36,8 +36,16 @@ const router = createRouter({
       component: () => import('@/views/LocationDetail.vue'),
     },
     {
+      path: '/location/character/:id',
+      component: () => import('@/views/CharacterDetail.vue'),
+    },
+    {
       path: '/episode/:id',
       component: () => import('@/views/EpisodeDetail.vue'),
+    },
+    {
+      path: '/episode/character/:id',
+      component: () => import('@/views/CharacterDetail.vue'),
     },
     {
       path: '/:pathMatch(.*)*',

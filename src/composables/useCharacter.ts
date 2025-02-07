@@ -23,7 +23,7 @@ export default function () {
     }
   }
 
-  const filterCharacter = async (paramsData: number[] | string) => {
+  const filterCharacter = async (paramsData: number[] | string[] | string) => {
     const { data } = await axios.get(`/character/${paramsData}`)
     return data
   }
