@@ -1,39 +1,41 @@
-# package.json
+# RyMFinder
 
-This template should help get you started developing with Vue 3 in Vite.
+RyMFinder es una aplicación basada en los personajes de la serie Rick and Morty. Esta aplicación permite a los usuarios explorar y obtener información detallada sobre los personajes de la serie.
 
-## Recommended IDE Setup
+## Características
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Búsqueda de personajes**: Los usuarios pueden buscar personajes por nombre.
+- **Detalles del personaje**: Cada personaje tiene una página de detalles que incluye información como su especie, género, origen y episodios en los que aparece.
+- **Listado de episodios**: Los usuarios pueden ver una lista de episodios en los que aparece cada personaje.
+- **Interfaz amigable**: La aplicación cuenta con una interfaz intuitiva y fácil de usar.
 
-## Type Support for `.vue` Imports in TS
+## Instalación
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/RyMFinder.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd RyMFinder
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-## Customize configuration
+## Uso
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
+2. Abre tu navegador y navega a `http://localhost:3000`.
 
-## Project Setup
+## Contribuciones
 
-```sh
-pnpm install
-```
+Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
 
-### Compile and Hot-Reload for Development
+## Licencia
 
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
