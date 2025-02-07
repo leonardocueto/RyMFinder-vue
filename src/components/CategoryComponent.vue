@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row gap-4 w-full">
+  <nav class="flex flex-col md:flex-row gap-4 w-full">
     <slot />
-  </div>
+  </nav>
 </template>
 
 <script lang="ts" setup></script>
