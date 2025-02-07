@@ -1,41 +1,41 @@
 # RyMFinder
 
-RyMFinder es una aplicación basada en los personajes de la serie Rick and Morty. Esta aplicación permite a los usuarios explorar y obtener información detallada sobre los personajes de la serie.
+RyMFinder is an application based on the characters from the Rick and Morty series. This application allows users to explore and obtain detailed information about the characters from the series.
 
-## Características
+## Features
 
-- **Búsqueda de personajes**: Los usuarios pueden buscar personajes por nombre.
-- **Detalles del personaje**: Cada personaje tiene una página de detalles que incluye información como su especie, género, origen y episodios en los que aparece.
-- **Listado de episodios**: Los usuarios pueden ver una lista de episodios en los que aparece cada personaje.
-- **Interfaz amigable**: La aplicación cuenta con una interfaz intuitiva y fácil de usar.
+- **Character Search**: Users can search for characters by name.
+- **Character Details**: Each character has a detail page that includes information such as species, gender, origin, and episodes they appear in.
+- **Episode List**: Users can view a list of episodes in which each character appears.
+- **User-Friendly Interface**: The application features an intuitive and easy-to-use interface.
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/tu-usuario/RyMFinder.git
+   git clone https://github.com/your-username/RyMFinder.git
    ```
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd RyMFinder
    ```
-3. Instala las dependencias:
+3. Install the dependencies:
    ```bash
    npm install
    ```
 
-## Uso
+## Usage
 
-1. Inicia la aplicación:
+1. Start the application:
    ```bash
    npm start
    ```
-2. Abre tu navegador y navega a `http://localhost:3000`.
+2. Open your browser and navigate to `http://localhost:3000`.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request para discutir cualquier cambio que desees realizar.
+Contributions are welcome. Please open an issue or submit a pull request to discuss any changes you wish to make.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
