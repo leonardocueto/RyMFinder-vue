@@ -1,10 +1,11 @@
 <template>
   <header class="flex items-center justify-start pb-4">
     <router-link
-      to="/"
+      to="#"
+      @click.prevent="goBack"
       class="p-2 cursor-pointer hover:bg-gray-200 rounded-full transition-colors duration-200"
     >
-      <icon-component icon="IconArrowLeft" size="medium" />
+      <icon-component icon="IconX" size="medium" />
     </router-link>
     <h1
       class="font-bold text-xl md:text-3xl text-center absolute left-1/2 transform -translate-x-1/2"
@@ -62,12 +63,13 @@
 
 <script lang="ts" setup>
 import { ref, onMounted, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import IconComponent from '@/components/IconComponent.vue'
 import useCharacter from '@/composables/useCharacter'
 import type { ICharacter } from '@/interface/character.interface'
 
 const route = useRoute()
+const router = useRouter()
 const id = route.params.id
 const isLoading = ref(true)
 const character = ref<ICharacter | null>(null)
@@ -99,6 +101,14 @@ const formattedDate = computed(() => {
   if (!character.value?.created) return ''
   return new Date(character.value.created).toLocaleDateString()
 })
+
+const goBack = () => {
+  if (window.history.length > 1) {
+    window.history.back()
+  } else {
+    router.push('/')
+  }
+}
 
 onMounted(async () => {
   try {
