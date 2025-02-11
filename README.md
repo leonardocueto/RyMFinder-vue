@@ -1,41 +1,40 @@
-# RyMFinder
+# Finder Rick and Morty
 
-RyMFinder is an application based on the characters from the Rick and Morty series. This application allows users to explore and obtain detailed information about the characters from the series.
+Welcome to **Finder Rick and Morty**! This is an application that allows you to explore the Rick and Morty universe in a simple and fun way. The app features three main tabs: **Characters**, **Episodes**, and **Locations**. Each tab provides detailed information about the corresponding elements and includes **infinite scroll** so you can keep exploring without limits.
 
-## Features
+## Key Features
 
-- **Character Search**: Users can search for characters by name.
-- **Character Details**: Each character has a detail page that includes information such as species, gender, origin, and episodes they appear in.
-- **Episode List**: Users can view a list of episodes in which each character appears.
-- **User-Friendly Interface**: The application features an intuitive and easy-to-use interface.
+- **Characters**: Explore the complete list of Rick and Morty characters. Each character card displays information such as name, status, species, gender, and more. Scroll infinitely to discover all the characters!
+
+- **Episodes**: Relive all the episodes of the series. Find details like the episode name, air date, and the characters featured in it. Infinite scroll allows you to load more episodes as you go.
+
+- **Locations**: Discover the different places in the Rick and Morty universe. From Earth to unknown dimensions, each location has its own card with relevant information. Keep scrolling to find more places!
+
+## Technologies Used
+
+- **Frontend**: React.js, React Router, Axios
+- **Styling**: CSS, Tailwind CSS (optional)
+- **API**: [Rick and Morty API](https://rickandmortyapi.com/)
 
 ## Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/your-username/RyMFinder.git
+   git clone https://github.com/yourusername/finder-rick-and-morty.git
+
    ```
+
 2. Navigate to the project directory:
-   ```bash
-   cd RyMFinder
-   ```
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
 
-## Usage
+````bash
+cd finder-rick-and-morty
+3. Install dependencies:
+```bash
+pnpm install
+4. Start the application:
+```bash
+pnpm run dev
 
-1. Start the application:
-   ```bash
-   npm start
-   ```
-2. Open your browser and navigate to `http://localhost:3000`.
-
-## Contributions
-
-Contributions are welcome. Please open an issue or submit a pull request to discuss any changes you wish to make.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+Thank you for using Finder Rick and Morty! We hope you enjoy exploring the multiverse as much as we enjoyed creating this app. Wubba Lubba Dub Dub! �
+````
